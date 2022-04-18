@@ -1,7 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.0;
 
-//non erc20 compliant contract 
+//non erc20 compliant contract
+contract VolcanoCoin {
     uint public totalSupply;
     address owner;
     mapping(address => uint) public balance;
