@@ -25,8 +25,6 @@ contract Score {
         _;
     }
 
-    uint score = 5; //256 by default
-
     //get score is implicit in the public declaration
     function getScore(address user) public view returns (uint){
         return score_list[user];
