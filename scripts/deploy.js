@@ -5,7 +5,6 @@ const main =  async () => {
     const score = await Score.deploy();
     // mine the contract
     await score.deployed();
-    console.log(ethers);
 }
 
 main()
