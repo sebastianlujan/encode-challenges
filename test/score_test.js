@@ -31,7 +31,7 @@ describe("Score", () => {
   });
 
   it("Should the owner set alice score ", async () => {
-    expect(contract.setScore(score, alice.address)).to.be.ok;
+    expect(await contract.setScore(score, alice.address)).to.be.ok;
 
     myScore = await contract.getScore(alice.address);
     expect(myScore).to.be.equal(12);
